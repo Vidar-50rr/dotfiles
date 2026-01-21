@@ -20,8 +20,8 @@ link "$DOTFILES_DIR/shell/bash/.bashrc" "$HOME/.bashrc"
 link "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
 
 # Git
-link "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
-link "$DOTFILES_DIR/git/ignore_global" "$HOME/.gitignore_global"
+link "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
+link "$DOTFILES_DIR/git/.gitignore_global" "$HOME/.gitignore_global"
 
 # Starship
 mkdir -p "$HOME/.config"
