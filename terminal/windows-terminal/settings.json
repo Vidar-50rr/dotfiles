@@ -1,0 +1,72 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [],
+  "alwaysShowNotificationIcon": false,
+  "copyFormatting": "none",
+  "copyOnSelect": true,
+  "defaultProfile": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+  "keybindings": [
+    {
+      "id": "Terminal.CopyToClipboard",
+      "keys": "ctrl+c"
+    },
+    {
+      "id": "Terminal.PasteFromClipboard",
+      "keys": "ctrl+v"
+    },
+    {
+      "id": "Terminal.DuplicatePaneAuto",
+      "keys": "alt+shift+d"
+    }
+  ],
+  "language": "en-US",
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {
+      "backgroundImage": "desktopWallpaper",
+      "backgroundImageAlignment": "center",
+      "backgroundImageOpacity": 0.19,
+      "bellStyle": "taskbar",
+      "colorScheme": "Catppuccin Macchiato",
+      "cursorShape": "filledBox",
+      "font": {
+        "face": "CaskaydiaMono Nerd Font Mono",
+        "size": 12.5
+      },
+      "opacity": 90,
+      "padding": "8, 8, 8, 8",
+      "useAcrylic": false
+    }
+  },
+  "schemes": [
+    {
+      "background": "#24273A",
+      "black": "#494D64",
+      "blue": "#8AADF4",
+      "brightBlack": "#5B6078",
+      "brightBlue": "#8AADF4",
+      "brightCyan": "#8BD5CA",
+      "brightGreen": "#A6DA95",
+      "brightPurple": "#F5BDE6",
+      "brightRed": "#ED8796",
+      "brightWhite": "#A5ADCB",
+      "brightYellow": "#EED49F",
+      "cursorColor": "#F4DBD6",
+      "cyan": "#8BD5CA",
+      "foreground": "#CAD3F5",
+      "green": "#A6DA95",
+      "name": "Catppuccin Macchiato",
+      "purple": "#F5BDE6",
+      "red": "#ED8796",
+      "selectionBackground": "#5B6078",
+      "white": "#B8C0E0",
+      "yellow": "#EED49F"
+    }
+  ],
+  "themes": []
+}
