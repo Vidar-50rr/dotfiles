@@ -2,7 +2,7 @@
 
 # dotfiles
 
-Personal dotfiles for Linux / WSL.
+Personal dotfiles
 
 ## Installation
 
@@ -10,3 +10,4 @@ Personal dotfiles for Linux / WSL.
 git clone git@github.com:Vidar-50rr/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh
+
