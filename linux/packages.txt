@@ -1,0 +1,40 @@
+# Core CLI
+git
+curl
+wget
+ca-certificates
+zip
+tar
+unzip
+gnupg
+gzip
+xz-utils
+rsync
+
+# Shell UX
+bat
+jq
+tree
+yazi (snaps)
+startship
+
+
+# Networking / debugging
+nmap
+
+# Dev essentials
+make
+gcc
+g++
+pkg-config
+
+# Containers
+docker
+docker-compose-plugin
+
+# Editors / tools (optional)
+micro
+
+# Java tooling (optional)
+sdkman
+
