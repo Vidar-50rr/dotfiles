@@ -66,3 +66,7 @@ mkdir -p "$HOME/.config/micro"
 link "$DOTFILES_DIR/editor/micro/settings.json" "$HOME/.config/micro/settings.json"
 link "$DOTFILES_DIR/editor/micro/bindings.json" "$HOME/.config/micro/bindings.json"
 
+# Kitty
+link "$DOTFILES_DIR/terminal/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+link "$DOTFILES_DIR/terminal/kitty/current-theme.conf" "$HOME/.config/kitty/current-theme.conf"
+
