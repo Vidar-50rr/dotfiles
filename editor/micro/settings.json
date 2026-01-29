@@ -1,11 +1,9 @@
 {
-  "clipboard": "terminal",
-  "colorscheme": "nord-tc",
-  "hlsearch": true,
-  "jumpcursor": true,
-  "smartindent": true,
-  "softwrap": true,
-  "tabsize": 2
+    "clipboard": "terminal",
+    "colorscheme": "nord-tc",
+    "hlsearch": true,
+    "jumpcursor": true,
+    "smartindent": true,
+    "softwrap": true,
+    "tabsize": 2
 }
-
-// plugins: nord-colors + detectindent
