@@ -3,7 +3,7 @@
 	email = jokerwin@avengerwsl.com
 [core]
 	autocrlf = input
-	excludesfile = ~./.gitignore_global
+	excludesfile = ~/.gitignore_global
 [init]
 	defaultBranch = master
 [pull]
