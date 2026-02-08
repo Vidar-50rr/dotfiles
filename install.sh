@@ -22,6 +22,11 @@ link() {
   local src="$1"
   local dest="$2"
 
+  if [ ! -e "$src" ]; then
+    log "Skipping $dest (source missing: $src)"
+    return
+  fi
+
   # Destination exists
   if [ -e "$dest" ] || [ -L "$dest" ]; then
     # Already correct symlink
@@ -69,4 +74,3 @@ link "$DOTFILES_DIR/editor/micro/bindings.json" "$HOME/.config/micro/bindings.js
 # Kitty
 link "$DOTFILES_DIR/terminal/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
 link "$DOTFILES_DIR/terminal/kitty/current-theme.conf" "$HOME/.config/kitty/current-theme.conf"
-
