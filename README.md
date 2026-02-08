@@ -4,10 +4,15 @@
 
 Personal dotfiles
 
+## Documentation
+
+https://vidar-50rr.github.io/dotfiles/
+
 ## Installation
 
 ```bash
 git clone git@github.com:Vidar-50rr/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh
+```
 
