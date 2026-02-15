@@ -24,6 +24,7 @@ fi
 # Tooling init (keep near end)
 [ -f "$DOTFILES_BASH_DIR/nvm.bash" ] && . "$DOTFILES_BASH_DIR/nvm.bash"
 [ -f "$DOTFILES_BASH_DIR/sdkman.bash" ] && . "$DOTFILES_BASH_DIR/sdkman.bash"
+# [ -f "$DOTFILES_BASH_DIR/prompt.bash" ] && . "$DOTFILES_BASH_DIR/prompt.bash"
 
 # Starship prompt (must be last prompt-related line)
 command -v starship >/dev/null 2>&1 && eval "$(starship init bash)"
