@@ -27,6 +27,7 @@ make
 gcc
 g++
 pkg-config
+cloc (count lines of code by language)
 
 # Containers
 docker
