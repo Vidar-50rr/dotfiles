@@ -27,8 +27,10 @@ prompt_path() {
   local max_segments=3
   local p="${PWD/#$HOME/~}"
 
-  # Split by /
-  IFS='/' read -r -a parts <<< "${p#/}"
+  # Remove leading slash for splitting
+  local clean="${p#/}"
+
+  IFS='/' read -r -a parts <<< "$clean"
   local count="${#parts[@]}"
 
   if (( count <= max_segments )); then
@@ -37,13 +39,17 @@ prompt_path() {
   fi
 
   local start=$((count - max_segments))
-  local tail=("${parts[@]:$start:$max_segments}")
+  local result=""
 
-  # Rebuild with leading indicator
+  for ((i=start; i<count; i++)); do
+    result+="/${parts[i]}"
+  done
+
+  # Handle ~ case
   if [[ "$p" == "~"* ]]; then
-    echo "…/${tail[*]// /\/}"
+    echo "…$result"
   else
-    echo "…/${tail[*]// /\/}"
+    echo "…$result"
   fi
 }
 
