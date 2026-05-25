@@ -18,6 +18,8 @@ tree
 yazi (snaps)
 startship
 
+# Utils
+keychain (ssh-agents, commit from cli without asking credentials)
 
 # Networking / debugging
 nmap
@@ -28,6 +30,8 @@ gcc
 g++
 pkg-config
 cloc (count lines of code by language)
+golang-go + actionlint (check format for gh actions)
+yamllint (check format for general YAML)
 
 # Containers
 docker
