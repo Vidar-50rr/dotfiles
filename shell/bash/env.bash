@@ -8,3 +8,6 @@ shopt -s checkwinsize
 
 # Case-insensitive tab completion
 bind 'set completion-ignore-case on'
+
+# Default editor
+export EDITOR=micro

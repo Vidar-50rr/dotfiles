@@ -24,9 +24,7 @@ fi
 # Tooling init (keep near end)
 [ -f "$DOTFILES_BASH_DIR/nvm.bash" ] && . "$DOTFILES_BASH_DIR/nvm.bash"
 [ -f "$DOTFILES_BASH_DIR/sdkman.bash" ] && . "$DOTFILES_BASH_DIR/sdkman.bash"
-
-# Default editor
-export EDITOR=micro
+# [ -f "$DOTFILES_BASH_DIR/prompt.bash" ] && . "$DOTFILES_BASH_DIR/prompt.bash"
 
 # Local private overrides, not tracked by this repository
 [ -f "$HOME/.bashrc.local" ] && . "$HOME/.bashrc.local"
