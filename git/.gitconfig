@@ -1,6 +1,6 @@
 [user]
-	name = avenger-wsl
-	email = jokerwin@avengerwsl.com
+	name = your-name
+	email = your-mail
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
@@ -10,9 +10,3 @@
 	rebase = false
 [push]
  autoSetupRemote = true
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
