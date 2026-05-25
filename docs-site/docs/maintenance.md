@@ -6,12 +6,12 @@ title: Maintenance and Troubleshooting
 ## Updating configs
 
 - Edit files in the repository, not the symlink targets.
-- Re-run `./install.sh` to refresh symlinks after adding new files.
+- Existing symlinks pick up file edits automatically.
 
 ## Backups
 
-- Backups are stored under `$HOME/.dotfiles-backup/<timestamp>`.
-- Each install run creates a new backup directory.
+- Back up existing destination files manually before replacing them with
+  symlinks.
 
 ## Common issues
 
@@ -22,4 +22,5 @@ title: Maintenance and Troubleshooting
 ## Adding new files
 
 - Place new configs under the closest existing directory.
-- Add a `link` call in `install.sh` and document the path here.
+- Document the expected destination in Manual Installation and the relevant
+  tool-specific page.

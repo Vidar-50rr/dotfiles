@@ -5,22 +5,18 @@ slug: /
 ---
 
 This repository contains personal dotfiles and configuration assets for shell,
-terminal, editor, and git workflows. The install script creates symlinks into
-your home directory and backs up existing files before linking.
+terminal, editor, and git workflows. Configs are installed manually, usually by
+creating symlinks from this repository into the expected locations under
+`$HOME`.
 
 ## Quick start
 
 ```bash
 git clone git@github.com:Vidar-50rr/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-./install.sh
 ```
 
-To remove the symlinks later:
-
-```bash
-./uninstall.sh
-```
+Then follow Manual Installation for the files you want to link or copy.
 
 ## What is included
 
@@ -32,6 +28,6 @@ To remove the symlinks later:
 
 ## How to use these docs
 
-- Start with Installation for setup details and backup behavior.
+- Start with Manual Installation for target paths and symlink examples.
 - Use Repository Layout to see where each configuration lives.
 - Dive into the Shell, Git, Editor, and Terminal sections for file specifics.

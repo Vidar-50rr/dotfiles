@@ -3,7 +3,8 @@ id: git
 title: Git Configuration
 ---
 
-Git configuration is stored under `git/` and linked into the home directory.
+Git configuration is stored under `git/` and should be linked into the home
+directory.
 
 ## Files
 
@@ -16,9 +17,7 @@ Git configuration is stored under `git/` and linked into the home directory.
   - Global ignores for OS files, IDEs, build outputs, node artifacts, logs,
     and dotenv files.
 
-## Usage
-
-The install script links these files to:
+## Target Paths
 
 - `$HOME/.gitconfig`
 - `$HOME/.gitignore_global`

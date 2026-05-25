@@ -1,41 +1,56 @@
 ---
 id: setup
-title: Installation and Removal
+title: Manual Installation
 ---
 
-## Install
+## Clone Path
 
 ```bash
-./install.sh
+git clone git@github.com:Vidar-50rr/dotfiles.git ~/dotfiles
 ```
 
-What it does:
+`shell/bash/.bashrc` expects modules under `$HOME/dotfiles/shell/bash`. Keep the
+repository at `~/dotfiles` or adjust `DOTFILES_BASH_DIR` in `.bashrc`.
 
-- Creates `$HOME/.config` if missing.
-- Backs up any existing target files into
-  `$HOME/.dotfiles-backup/<timestamp>`.
-- Creates symlinks for bash, git, terminal, and editor configs.
+## Recommended Links
 
-## Uninstall
+Back up existing files before replacing them. Then create the config directories
+and symlinks you want to manage from this repo.
 
 ```bash
-./uninstall.sh
+mkdir -p "$HOME/.config/micro" "$HOME/.config/kitty"
+
+ln -s "$HOME/dotfiles/shell/bash/.bashrc" "$HOME/.bashrc"
+ln -s "$HOME/dotfiles/git/.gitconfig" "$HOME/.gitconfig"
+ln -s "$HOME/dotfiles/git/.gitignore_global" "$HOME/.gitignore_global"
+ln -s "$HOME/dotfiles/terminal/starship.toml" "$HOME/.config/starship.toml"
+ln -s "$HOME/dotfiles/editor/micro/settings.json" "$HOME/.config/micro/settings.json"
+ln -s "$HOME/dotfiles/editor/micro/bindings.json" "$HOME/.config/micro/bindings.json"
+ln -s "$HOME/dotfiles/terminal/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+ln -s "$HOME/dotfiles/terminal/kitty/current-theme.conf" "$HOME/.config/kitty/current-theme.conf"
 ```
 
-What it does:
+## Target Map
 
-- Removes symlinks for `.bashrc`, `.gitconfig`, and `.gitignore_global`.
-- Removes the Starship config symlink at `$HOME/.config/starship.toml`.
-- Leaves your backup directory untouched.
+| Source | Destination |
+| --- | --- |
+| `shell/bash/.bashrc` | `$HOME/.bashrc` |
+| `git/.gitconfig` | `$HOME/.gitconfig` |
+| `git/.gitignore_global` | `$HOME/.gitignore_global` |
+| `terminal/starship.toml` | `$HOME/.config/starship.toml` |
+| `editor/micro/settings.json` | `$HOME/.config/micro/settings.json` |
+| `editor/micro/bindings.json` | `$HOME/.config/micro/bindings.json` |
+| `terminal/kitty/kitty.conf` | `$HOME/.config/kitty/kitty.conf` |
+| `terminal/kitty/current-theme.conf` | `$HOME/.config/kitty/current-theme.conf` |
 
-## Backup behavior
+## Manual Files
 
-The install script calls `backup()` before linking any file that already exists.
-Backups are created once per install run in a timestamped directory.
+- Put private shell setup in `$HOME/.bashrc.local`; it is sourced by `.bashrc`
+  and must not be committed.
+- Install fonts from `fonts/` through your desktop/font manager.
+- Merge `terminal/windows-terminal/settings.json` into the Windows Terminal
+  profile manually.
 
-## Notes
+## Removal
 
-- `~/.bashrc` sources modules from `$HOME/dotfiles/shell/bash`.
-  The install script also links copies into `~/.config/dotfiles/bash`.
-  Keep both locations in sync or adjust the path in `.bashrc` if you prefer
-  the `~/.config` location.
+Remove only symlinks you created and leave real user files untouched.

@@ -3,8 +3,8 @@ id: editor
 title: Micro Editor
 ---
 
-Micro configuration lives under `editor/micro/` and is linked to
-`$HOME/.config/micro` by the install script.
+Micro configuration lives under `editor/micro/` and should be linked under
+`$HOME/.config/micro`.
 
 ## Settings
 

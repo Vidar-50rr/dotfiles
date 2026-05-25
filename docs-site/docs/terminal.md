@@ -3,7 +3,8 @@ id: terminal
 title: Terminal Configuration
 ---
 
-Terminal configs live under `terminal/` and are linked by `install.sh`.
+Terminal configs live under `terminal/` and should be linked or copied to each
+terminal's expected config location.
 
 ## Kitty
 
@@ -19,12 +20,15 @@ Terminal configs live under `terminal/` and are linked by `install.sh`.
 `terminal/kitty/current-theme.conf`:
 
 - Catppuccin Macchiato color scheme.
+- Target paths: `$HOME/.config/kitty/kitty.conf` and
+  `$HOME/.config/kitty/current-theme.conf`.
 
 ## Starship prompt
 
 `terminal/starship.toml` controls prompt appearance and symbols.
 It includes OS, user, hostname, directory, and git status segments with
 custom symbols and colors.
+Target path: `$HOME/.config/starship.toml`.
 
 ## Windows Terminal
 
@@ -33,6 +37,7 @@ custom symbols and colors.
 - A Catppuccin Macchiato scheme.
 - CaskaydiaMono Nerd Font Mono.
 - Key bindings for copy/paste and pane duplication.
+Merge it manually into the Windows Terminal settings file on Windows.
 
 If you change fonts or themes, update the corresponding entries in both Kitty
 and Windows Terminal to keep visual parity.

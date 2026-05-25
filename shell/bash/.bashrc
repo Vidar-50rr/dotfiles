@@ -28,5 +28,8 @@ fi
 # Default editor
 export EDITOR=micro
 
+# Local private overrides, not tracked by this repository
+[ -f "$HOME/.bashrc.local" ] && . "$HOME/.bashrc.local"
+
 # Starship prompt (must be last prompt-related line)
 command -v starship >/dev/null 2>&1 && eval "$(starship init bash)"
