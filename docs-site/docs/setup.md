@@ -47,6 +47,8 @@ ln -s "$HOME/dotfiles/terminal/kitty/current-theme.conf" "$HOME/.config/kitty/cu
 
 - Put private shell setup in `$HOME/.bashrc.local`; it is sourced by `.bashrc`
   and must not be committed.
+- Put private Git identity and credential helpers in `$HOME/.gitconfig.local`;
+  it is included by `.gitconfig` and must not be committed.
 - Install fonts from `fonts/` through your desktop/font manager.
 - Merge `terminal/windows-terminal/settings.json` into the Windows Terminal
   profile manually.

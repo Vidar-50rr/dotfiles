@@ -1,4 +1,6 @@
 AGENTS.md
+.gitconfig.local
+git/.gitconfig.local
 
 # Docusaurus generated output
 docs-site/.docusaurus/
