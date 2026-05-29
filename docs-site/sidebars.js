@@ -24,6 +24,7 @@ const sidebars = {
     'editor',
     'terminal',
     'linux-packages',
+    'node-ecosystem-commands',
     'assets-fonts',
     'maintenance',
   ],
