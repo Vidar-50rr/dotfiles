@@ -17,6 +17,10 @@ path_append() {
 # User-local
 path_prepend "$HOME/.local/bin"
 
+# pnpm global binaries
+export PNPM_HOME="$HOME/.local/share/pnpm"
+path_prepend "$PNPM_HOME/bin"
+
 # OpenCode
 path_prepend "$HOME/.opencode/bin"
 
