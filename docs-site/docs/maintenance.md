@@ -43,19 +43,19 @@ To update the published site after changing docs or Docusaurus config:
 
 ```bash
 cd docs-site
-npm install
-npm run build
-USE_SSH=true npm run deploy
+pnpm install
+pnpm build
+USE_SSH=true pnpm deploy
 ```
 
 If SSH auth is not available, use HTTPS auth instead:
 
 ```bash
 cd docs-site
-GIT_USER=<your-github-user> npm run deploy
+GIT_USER=<your-github-user> pnpm deploy
 ```
 
-`npm run deploy` builds the site and pushes the generated output to the remote
+`pnpm deploy` builds the site and pushes the generated output to the remote
 `gh-pages` branch. Do not edit `gh-pages` by hand and do not merge `master` into
 it.
 
