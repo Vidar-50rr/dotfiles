@@ -7,6 +7,19 @@ title: Node Ecosystem Commands
 
 This runbook keeps the most useful commands for `npm`, `nvm`, `node`, and `pnpm` in one place.
 
+## Default Installers And Updates
+
+| Tool | Default installer | Update command |
+| --- | --- | --- |
+| `npm` | Bundled with Node.js through `nvm` | `npm install --global npm@latest` |
+| `nvm` | Official install script | Re-run the official install script with the target version |
+| `node` | `nvm` | `nvm install --lts` or `nvm install <version>` |
+| `pnpm` | Corepack from the active Node.js version | `corepack install --global pnpm@latest` |
+
+Keep Node.js managed through `nvm` by default, then let that Node.js version
+provide `npm` and `corepack`. Use `corepack enable` once if `pnpm` is not
+available on a new machine.
+
 ## npm
 
 `npm` is the default package manager shipped with Node.js. It installs dependencies, runs package scripts, publishes packages, and manages project metadata through `package.json` and `package-lock.json`.
